@@ -40,7 +40,7 @@ document.getElementById("travelForm").addEventListener("submit", function (e) {
 
   let resultBox = document.getElementById("result");
   resultBox.innerHTML = `
-        <h3>✈️ Travel Summary</h3>
+        <h3>Travel Summary</h3>
         <p><strong>Destinations:</strong> ${destinations.join(", ")}</p>
         <p><strong>Total Budget:</strong> ₹${budget}</p>
         <p><strong>Days Planned:</strong> ${days}</p>
