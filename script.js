@@ -41,7 +41,7 @@ document.getElementById("travelForm").addEventListener("submit", function (e) {
         <p><strong>Destinations:</strong> ${destinations.join(", ")}</p>
         <p><strong>Total Budget:</strong> ₹${budget}</p>
         <p><strong>Days Planned:</strong> ${days}</p>
-        <p><strong>Trip Type:</strong> ${vacationType}</p>
+        <p><strong>Vacation Type:</strong> ${vacationType}</p>
         <p><strong>Hotel Suggestion:</strong> ${hotelSuggestion}</p>
         <p><strong>Travel Summary:</strong> ${tripMessage}</p>
       `;
