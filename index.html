@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Travel Planner</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Smart Travel Planner</h2>
+        <form id="travelForm">
+            <label>Destinations:</label>
+            <input type="text" id="destinations" placeholder="e.g. Jaipur, Udaipur, Goa, Mumbai" required>
+
+            <label>Total Budget ($):</label>
+            <input type="number" id="budget" required>
+
+            <label>Number of Travel Days:</label>
+            <input type="number" id="days" required>
+
+            <button type="submit">Plan My Trip</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
