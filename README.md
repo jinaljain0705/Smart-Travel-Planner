@@ -56,4 +56,4 @@ User Input via prompt()
 
 Output:
 ![tripPlanner](https://github.com/jinaljain0705/Smart-Travel-Planner/blob/main/Output/tripPlanner.png)
-![tripPlanned]()
+![tripPlanned](https://github.com/jinaljain0705/Smart-Travel-Planner/blob/main/Output/tripPlanned.png)
