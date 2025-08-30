@@ -55,7 +55,5 @@ Conditional Statements (trip type, budget, hotel suggestion)
 User Input via prompt()
 
 Output:
-![]()
-![]()
-
-
+![tripPlanner](https://github.com/jinaljain0705/Smart-Travel-Planner/blob/main/Output/tripPlanner.png)
+![tripPlanned]()
