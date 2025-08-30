@@ -19,11 +19,13 @@ document.getElementById("travelForm").addEventListener("submit", function (e) {
     vacationType = "Weekend Getaway";
   } else if (days >= 3 && days <= 7) {
     vacationType = "Perfect Holiday Trip";
-  } else {
+  } else if (days > 7 && days <= 15) {
     vacationType = "Extended Vacation";
+  } else {
+    vacationType = "Once-in-a-lifetime Grand Trip";
   }
 
-  const suggestHotel = (totalBudget, totalDays) => {
+  const suggestStay = (totalBudget, totalDays) => {
     let perDay = totalBudget / totalDays;
     if (perDay < 2000) {
       return "Budget Hotels";
@@ -34,15 +36,21 @@ document.getElementById("travelForm").addEventListener("submit", function (e) {
     }
   };
 
-  let hotelSuggestion = suggestHotel(budget, days);
+  let stayOption = suggestStay(budget, days);
 
-  document.getElementById("result").innerHTML = `
-        <h3>Travel Summary</h3>
+  let resultBox = document.getElementById("result");
+  resultBox.innerHTML = `
+        <h3>✈️ Travel Summary</h3>
         <p><strong>Destinations:</strong> ${destinations.join(", ")}</p>
         <p><strong>Total Budget:</strong> ₹${budget}</p>
         <p><strong>Days Planned:</strong> ${days}</p>
-        <p><strong>Vacation Type:</strong> ${vacationType}</p>
-        <p><strong>Hotel Suggestion:</strong> ${hotelSuggestion}</p>
-        <p><strong>Travel Summary:</strong> ${tripMessage}</p>
+        <p><strong>Trip Type:</strong> ${vacationType}</p>
+        <p><strong>Hotel Suggestion:</strong> ${stayOption}</p>
+        <p><strong>Travel Note:</strong> ${tripMessage}</p>
       `;
+
+  resultBox.classList.remove("show");
+  setTimeout(() => {
+    resultBox.classList.add("show");
+  }, 100);
 });
